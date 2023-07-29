@@ -594,7 +594,7 @@ section {
   overflow: hidden;
   background-color: var(--color-background);
   transition: all 0.6s ease-out;
-  width: 100%;
+  width: 101%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -609,26 +609,26 @@ section {
   border-radius: 50%;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
   position: absolute;
-  left: 45%;
+  left: 50%;
 }
 
 #preloader div:nth-child(1) {
-  left: calc(45% + 8px);
+  left: calc(50% + 8px);
   animation: animate-preloader-1 0.6s infinite;
 }
 
 #preloader div:nth-child(2) {
-  left: calc(45% + 8px);
+  left: calc(50% + 8px);
   animation: animate-preloader-2 0.6s infinite;
 }
 
 #preloader div:nth-child(3) {
-  left: calc(45% + 32px);
+  left: calc(50% + 32px);
   animation: animate-preloader-2 0.6s infinite;
 }
 
 #preloader div:nth-child(4) {
-  left: calc(45% + 56px);
+  left: calc(50% + 56px);
   animation: animate-preloader-3 0.6s infinite;
 }
 
@@ -920,6 +920,12 @@ section {
   .clients .client-logo img {
     padding: 20px;
   }
+  .features .features-item .features-img-bg img{ position: initial !important;
+    width: 100% !important;
+    height: auto !important;}
+  .features-item{ display: flex;}
+  .features-item .brandborder{order:1}
+  .features-item .flex-column{order:2}
 }
 
 /* About Section - Home Page
